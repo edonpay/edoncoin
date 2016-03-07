@@ -60,31 +60,8 @@ All responses have *status* field and *success* field. If something is wrong, re
     }
 }
 ```
-    
-### 2. 2. Get balance.
 
-**Url:** */api/getAccountsByHash*
-
-**Method:** *POST*
-
-**Description:** Return balance of current account.
-
-**Parameters:**
-
-|Field|Type|Description|
-|-----|-----|-----|
-|secretWord|String|secretWord - received when login (2.1)|
-
-**Response:**
-
-|Field|Type|Description|
-|-----|-----|-----|
-|success|Boolean|Result of success of operation.|
-|status|String|"OK" or error message.|
-|accountTypes|Object|Contain all accounts (see in 2.1).|
-
-
-### 2. 3. Send EDON.
+### 2. 2. Send EDON.
 
 **Url:** */api/createTransaction*
 
@@ -110,7 +87,7 @@ All responses have *status* field and *success* field. If something is wrong, re
 |status|String|"OK" or error message.|
 |transactionId|String|Transactions ID.|
 
-### 2. 4. Transactions List.
+### 2. 3. Transactions List.
 
 **Url:** */api/getMyTransactions*
 
@@ -159,7 +136,7 @@ All responses have *status* field and *success* field. If something is wrong, re
 ```
 
 
-### 2. 6. Get specific transaction details
+### 2. 4. Get specific transaction details
 
 **Url:** */api/getTransactionById?transactionId=TXT_ID*
 
@@ -208,7 +185,7 @@ All responses have *status* field and *success* field. If something is wrong, re
 }
 ```
 
-### 2. 7. Get account list
+### 2. 5. Get account list
 
 **Url:** */api/getAllAccounts*
 
@@ -248,7 +225,7 @@ none
 }
 ```
 
-### 2. 8. Get account by ID
+### 2. 6. Get account by ID
 
 **Url:** */api/getAccountById*
 
@@ -285,7 +262,7 @@ none
 }
 ```
 
-### 2. 9. Get peer list
+### 2. 7. Get peer list
 
 **Url:** */api/getAllPeers*
 
