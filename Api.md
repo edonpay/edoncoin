@@ -59,6 +59,7 @@ All responses have *status* field and *success* field. If something is wrong, re
         "unconfirmedAmount": 0
     }
 }
+```
     
 ### 2. 2. Get balance.
 
