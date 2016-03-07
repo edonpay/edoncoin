@@ -47,7 +47,6 @@ All responses have *status* field and *success* field. If something is wrong, re
 |secretWord|String|Secret World of account converted to hex format.|
 |accountTypes|Object|Contain all accounts (see example).|
 
-**Important:** At this moment working only *nodeAccount*, other ***in progress***
 
 **Example of accountTypes:**
 ```javascript
