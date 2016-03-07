@@ -50,7 +50,7 @@ All responses have *status* field and *success* field. If something is wrong, re
 
 **Example of accountTypes:**
 ```javascript
-
+{
     "edonAccount": {
         "name": "edon",
         "id": "EDON4GLHgHeu7VfoAcLn5Qwgg3FnuWLy9AbruPHbD2EcPW25",
@@ -58,7 +58,7 @@ All responses have *status* field and *success* field. If something is wrong, re
         "amount": 0,
         "unconfirmedAmount": 0
     }
-    ```
+}
     
 ### 2. 2. Get balance.
 
