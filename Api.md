@@ -75,7 +75,7 @@ All responses have *status* field and *success* field. If something is wrong, re
 
 |Field|Type|Description|
 |-----|-----|-----|
-|secretWord|String|Email + password. Example: test@gmail.compassword|
+|secretWord|String|Secret World of account converted to hex format. Get from /api/login|
 |amount|Float/Integer|Amount to be sent.|
 |recipientId|String|Recipient address.|
 
