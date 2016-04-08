@@ -302,3 +302,142 @@ none
 	...
 ]
 ```
+### 2. 8. Get balance.
+
+**Url:** */api/getAccountsByHash*
+
+**Method:** *POST*
+
+**Description:** Return the list of peers connected to current client.
+
+**Parameters:**
+
+|Field|Type|Description|
+|-----|-----|-----|
+|secretWord|String|secretWord - received when login (2.1)|
+
+
+**Response:**
+
+|Field|Type|Description|
+|-----|-----|-----|
+|accountId|String|ID of the account (account number).|
+|amount|Float/Integer|Confirmed balance of edon account.|
+|unconfirmedAmount|Float/Integer|Unconfirmed balance of edon account.|
+|success|Boolean|Result of success of operation.|
+|status|String|"OK" or unique error code.|
+
+
+**Example of peer list:**
+```javascript
+	{
+		"accountId":"EDON2fYrWLoA7YrB4XgSoUEA9Urg4qyaT2r2UJpRvKKB45iE",
+		"amount":0,
+		"unconfirmedAmount":0,
+		"success":true,
+		"status":"OK"
+	}
+```
+### 2. 9. Get block info.
+
+**Url:** */api/getBlockInfo*
+
+**Method:** *GET*
+
+**Description:** Return the list of peers connected to current client.
+
+**Parameters:**
+
+|Field|Type|Description|
+|-----|-----|-----|
+|blockId|String|ID of the block.|
+
+
+**Response:**
+
+|Field|Type|Description|
+|-----|-----|-----|
+|success|Boolean|Result of success of operation.|
+|status|String|"OK" or unique error code.|
+|block|Object|JSON object of block.|
+
+
+**Example of peer list:**
+```javascript
+	{	
+		"block":{
+					"version":1,
+					"timestamp":1459887012694,
+					"previousBlockId":"9718404821596001823",
+					"generatorPublicKey":"17ce2b317cf850c2734f4e1dda3a6d2958483aefd978c06f97d24dbf5ea9533a",
+					"previousBlockHash":"54c2ba9fdef42699451be07348dce51073b553bb40ce94bf86deb5b1e6ac561f",
+					"totalAmount":100,
+					"totalFee":0,
+					"payloadLength":0,
+					"generationSignature":"7d16c3ab330c83388e6393f1436c84b802d5a5565aca44c0d292fb899341ee06085edb3893059b5cba07863a40a47f417a8e8e7b4ee8aabfce79159518842b90",
+					"payloadHash":"fdfed35249a0644d18e248bd1eb5b2f63a3f5616f8e5bb94e2d92b7f88150d7e",
+					"blockSignature":"afa944a64d348fb61835f615dce307aebbdeefe9a0744a973e5488c4ed5bd4002179332a8277f2de9e997b51b463800547d77e3e6a7c81af02f65edbd9dfa103",
+					"cumulativeDifficulty":"120000687830",
+					"baseTarget":7686143350000000,
+					"nextBlockId":null,
+					"height":312,
+					"id":"8642316668634201965",
+					"stringId":"8642316668634201965",
+					"generatorId":"EDON2JG3a61DvME1bNaWvwhmaRaunpsbRaoxHiT1UHjmLe4L",
+					"confirmations":5
+				},
+		"success":true,
+		"status":"OK"
+	}
+```
+### 2. 10. Get last block info.
+
+**Url:** */api/getLastBlock*
+
+**Method:** *GET*
+
+**Description:** Return the list of peers connected to current client.
+
+**Parameters:**
+
+none
+
+**Response:**
+
+|Field|Type|Description|
+|-----|-----|-----|
+|success|Boolean|Result of success of operation.|
+|status|String|"OK" or unique error code.|
+|block|Object|JSON object of block.|
+
+
+**Example of peer list:**
+```javascript
+	{	
+		"block":{
+					"version":1,
+					"timestamp":1459887012694,
+					"previousBlockId":"9718404821596001823",
+					"generatorPublicKey":"17ce2b317cf850c2734f4e1dda3a6d2958483aefd978c06f97d24dbf5ea9533a",
+					"previousBlockHash":"54c2ba9fdef42699451be07348dce51073b553bb40ce94bf86deb5b1e6ac561f",
+					"totalAmount":100,
+					"totalFee":0,
+					"payloadLength":0,
+					"generationSignature":"7d16c3ab330c83388e6393f1436c84b802d5a5565aca44c0d292fb899341ee06085edb3893059b5cba07863a40a47f417a8e8e7b4ee8aabfce79159518842b90",
+					"payloadHash":"fdfed35249a0644d18e248bd1eb5b2f63a3f5616f8e5bb94e2d92b7f88150d7e",
+					"blockSignature":"afa944a64d348fb61835f615dce307aebbdeefe9a0744a973e5488c4ed5bd4002179332a8277f2de9e997b51b463800547d77e3e6a7c81af02f65edbd9dfa103",
+					"cumulativeDifficulty":"120000687830",
+					"baseTarget":7686143350000000,
+					"nextBlockId":null,
+					"height":312,
+					"id":"8642316668634201965",
+					"stringId":"8642316668634201965",
+					"generatorId":"EDON2JG3a61DvME1bNaWvwhmaRaunpsbRaoxHiT1UHjmLe4L",
+					"confirmations":5
+				},
+		"success":true,
+		"status":"OK"
+	}
+```
+
+
