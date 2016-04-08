@@ -308,7 +308,7 @@ none
 
 **Method:** *POST*
 
-**Description:** Return the list of peers connected to current client.
+**Description:** Return account information.
 
 **Parameters:**
 
@@ -344,7 +344,7 @@ none
 
 **Method:** *GET*
 
-**Description:** Return the list of peers connected to current client.
+**Description:** Return the block info.
 
 **Parameters:**
 
@@ -396,7 +396,7 @@ none
 
 **Method:** *GET*
 
-**Description:** Return the list of peers connected to current client.
+**Description:** Return the last block info.
 
 **Parameters:**
 
